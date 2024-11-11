@@ -14,13 +14,28 @@ Hierarchical Clustering: Hierarchical Clustering builds a tree-like structure (d
 
 This project highlights the benefits of each algorithm: K-Means is fast and efficient for well-separated clusters, DBSCAN is suitable for noisy and irregular data, and Hierarchical Clustering is effective for visualizing data hierarchies.
 
+Français:
+
+Dans ce projet, nous avons implémenté trois algorithmes de clustering — K-Means, DBSCAN, et le Clustering Hiérarchique — en utilisant Python avec une approche orientée objet.
+
+Clustering K-Means : K-Means est un algorithme basé sur les centroïdes qui divise les données en un nombre prédéfini de clusters (K) en fonction de la distance euclidienne entre les points de données et le centroïde de chaque cluster. L'algorithme ajuste les centroïdes de manière itérative pour minimiser la variance intra-cluster. K-Means est efficace pour les clusters sphériques, mais peut rencontrer des difficultés avec les formes irrégulières.
+
+DBSCAN (Clustering basé sur la densité) : DBSCAN est un algorithme basé sur la densité qui identifie les clusters en fonction de la densité des points. Il regroupe les points proches, avec un nombre minimal de points (min_samples) dans un rayon donné (eps). DBSCAN peut gérer des clusters de formes irrégulières et détecter le bruit, ce qui le rend adapté aux ensembles de données complexes.
+
+Clustering Hiérarchique : Le Clustering Hiérarchique construit une structure en arbre (dendrogramme) pour représenter les hiérarchies de regroupement de données. Nous avons utilisé une approche agglomérative, en commençant par chaque point de données comme un cluster indépendant, puis en les fusionnant en fonction de leur proximité (définie par le paramètre method, comme ward). Il permet de déterminer les clusters à différents niveaux en ajustant le paramètre threshold.
+
+Ce projet montre les avantages de chaque algorithme : K-Means est rapide et efficace pour des clusters bien séparés, DBSCAN est adapté aux données bruitées et irrégulières, et le Clustering Hiérarchique est utile pour visualiser les hiérarchies de données.
+
+
 فارسی:
 
 در این پروژه، سه الگوریتم خوشه‌بندی K-Means، DBSCAN، و خوشه‌بندی سلسله‌مراتبی را با استفاده از زبان پایتون و رویکرد شیءگرایی پیاده‌سازی کرده‌ایم.
 
-خوشه‌بندی K-Means: K-Means یک الگوریتم مبتنی بر مرکز خوشه است که داده‌ها را به تعداد مشخصی از خوشه‌ها (K) بر اساس فاصله اقلیدسی تقسیم می‌کند. این الگوریتم به صورت تکراری مراکز خوشه‌ها را تنظیم می‌کند تا واریانس درون‌خوشه‌ای را کمینه کند. K-Means برای خوشه‌های کروی مناسب است، اما ممکن است در مواجهه با خوشه‌های نامنظم مشکل داشته باشد.
+خوشه‌بندی K-Means:
+یک الگوریتم مبتنی بر مرکز خوشه است که داده‌ها را به تعداد مشخصی از خوشه‌ها (K) بر اساس فاصله اقلیدسی تقسیم می‌کند. این الگوریتم به صورت تکراری مراکز خوشه‌ها را تنظیم می‌کند تا واریانس درون‌خوشه‌ای را کمینه کند. K-Means برای خوشه‌های کروی مناسب است، اما ممکن است در مواجهه با خوشه‌های نامنظم مشکل داشته باشد.
 
-DBSCAN (خوشه‌بندی مبتنی بر تراکم): DBSCAN یک الگوریتم مبتنی بر تراکم است که خوشه‌ها را براساس تراکم نقاط داده شناسایی می‌کند. این الگوریتم نقاطی را که نزدیک به هم هستند و دارای حداقل تعداد نقاط (min_samples) در شعاع مشخص (eps) می‌باشند، در یک خوشه قرار می‌دهد. DBSCAN توانایی خوشه‌بندی داده‌های پیچیده و شناسایی نویز یا نقاط خارج از محدوده را دارد و برای مجموعه داده‌های نامنظم مناسب است.
+DBSCAN (خوشه‌بندی مبتنی بر تراکم):
+ یک الگوریتم مبتنی بر تراکم است که خوشه‌ها را براساس تراکم نقاط داده شناسایی می‌کند. این الگوریتم نقاطی را که نزدیک به هم هستند و دارای حداقل تعداد نقاط (min_samples) در شعاع مشخص (eps) می‌باشند، در یک خوشه قرار می‌دهد. DBSCAN توانایی خوشه‌بندی داده‌های پیچیده و شناسایی نویز یا نقاط خارج از محدوده را دارد و برای مجموعه داده‌های نامنظم مناسب است.
 
 خوشه‌بندی سلسله‌مراتبی: خوشه‌بندی سلسله‌مراتبی یک ساختار درخت‌مانند (دندروگرام) ایجاد می‌کند که سلسله‌مراتب گروه‌بندی داده‌ها را نشان می‌دهد. در اینجا، از روش تجمیعی استفاده شده که با قرار دادن هر نقطه داده به عنوان یک خوشه جداگانه شروع کرده و آن‌ها را براساس نزدیکی (تعیین شده توسط پارامتر method مانند ward) ترکیب می‌کند. این روش امکان تنظیم سطح خوشه‌بندی را با استفاده از پارامتر threshold فراهم می‌کند.
 
@@ -37,14 +52,3 @@ DBSCAN (التصنيف المكاني الكثيف): خوارزمية DBSCAN ت�
 
 يعرض هذا المشروع مزايا كل خوارزمية: K-Means سريعة وفعالة للمجموعات المنفصلة، و DBSCAN مناسب للبيانات غير المنتظمة، والتصنيف الهرمي فعال لتصور تسلسل البيانات.
 
-Français:
-
-Dans ce projet, nous avons implémenté trois algorithmes de clustering — K-Means, DBSCAN, et le Clustering Hiérarchique — en utilisant Python avec une approche orientée objet.
-
-Clustering K-Means : K-Means est un algorithme basé sur les centroïdes qui divise les données en un nombre prédéfini de clusters (K) en fonction de la distance euclidienne entre les points de données et le centroïde de chaque cluster. L'algorithme ajuste les centroïdes de manière itérative pour minimiser la variance intra-cluster. K-Means est efficace pour les clusters sphériques, mais peut rencontrer des difficultés avec les formes irrégulières.
-
-DBSCAN (Clustering basé sur la densité) : DBSCAN est un algorithme basé sur la densité qui identifie les clusters en fonction de la densité des points. Il regroupe les points proches, avec un nombre minimal de points (min_samples) dans un rayon donné (eps). DBSCAN peut gérer des clusters de formes irrégulières et détecter le bruit, ce qui le rend adapté aux ensembles de données complexes.
-
-Clustering Hiérarchique : Le Clustering Hiérarchique construit une structure en arbre (dendrogramme) pour représenter les hiérarchies de regroupement de données. Nous avons utilisé une approche agglomérative, en commençant par chaque point de données comme un cluster indépendant, puis en les fusionnant en fonction de leur proximité (définie par le paramètre method, comme ward). Il permet de déterminer les clusters à différents niveaux en ajustant le paramètre threshold.
-
-Ce projet montre les avantages de chaque algorithme : K-Means est rapide et efficace pour des clusters bien séparés, DBSCAN est adapté aux données bruitées et irrégulières, et le Clustering Hiérarchique est utile pour visualiser les hiérarchies de données.
